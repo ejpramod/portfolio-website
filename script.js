@@ -4,15 +4,15 @@
 
 // ─── Skills Data ───
 const skills = [
-  { name: 'EDI X12',          level: 95, icon: 'ph-fill ph-file-text',        cat: 'Expert' },
-  { name: 'EDIFACT',          level: 85, icon: 'ph-fill ph-globe',            cat: 'Advanced' },
-  { name: 'Cleo Integration Cloud', level: 90, icon: 'ph-fill ph-cloud',      cat: 'Expert' },
-  { name: 'SQL',              level: 88, icon: 'ph-fill ph-database',         cat: 'Advanced' },
-  { name: 'API Integration',  level: 80, icon: 'ph-fill ph-plugs-connected',  cat: 'Advanced' },
-  { name: 'Azure Logic Apps', level: 75, icon: 'ph-fill ph-microsoft-teams-logo', cat: 'Intermediate' },
-  { name: 'XML / JSON',       level: 90, icon: 'ph-fill ph-code',             cat: 'Expert' },
-  { name: 'Supply Chain Integration', level: 92, icon: 'ph-fill ph-truck',    cat: 'Expert' },
-  { name: 'ERP / WMS / TMS',  level: 78, icon: 'ph-fill ph-factory',          cat: 'Advanced' },
+  { name: 'EDI X12 & EDIFACT', level: 95, icon: 'ph-fill ph-file-text',        cat: 'Expert' },
+  { name: 'API (REST/JSON)',   level: 90, icon: 'ph-fill ph-plugs-connected',  cat: 'Expert' },
+  { name: 'Pipe 17',           level: 85, icon: 'ph-fill ph-gear',             cat: 'Advanced' },
+  { name: 'AS2 / SFTP / VAN',  level: 92, icon: 'ph-fill ph-shield-check',     cat: 'Expert' },
+  { name: 'SQL (Data Analysis)',level: 80, icon: 'ph-fill ph-database',         cat: 'Advanced' },
+  { name: 'SPS Commerce',      level: 88, icon: 'ph-fill ph-storefront',       cat: 'Expert' },
+  { name: 'Dicentral',         level: 85, icon: 'ph-fill ph-arrows-merge',     cat: 'Advanced' },
+  { name: 'JIRA & TeamWork',   level: 90, icon: 'ph-fill ph-kanban',           cat: 'Expert' },
+  { name: 'Partner Onboarding',level: 95, icon: 'ph-fill ph-users-three',      cat: 'Expert' },
 ];
 
 // ─── Render Skills ───
