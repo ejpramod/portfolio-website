@@ -206,13 +206,46 @@ function setFooterYear() {
   if (el) el.textContent = new Date().getFullYear();
 }
 
+// ─── Mouse Spotlight ───
+function initSpotlight() {
+  document.addEventListener('mousemove', (e) => {
+    const cards = document.querySelectorAll('.glass-card');
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+}
+
+// ─── Typed Header ───
+function initTypedHeader() {
+  const nameEl = document.querySelector('.hero-name');
+  if (!nameEl) return;
+  const originalText = nameEl.textContent;
+  nameEl.textContent = '';
+  let i = 0;
+  function type() {
+    if (i < originalText.length) {
+      nameEl.textContent += originalText.charAt(i);
+      i++;
+      setTimeout(type, 100);
+    }
+  }
+  setTimeout(type, 800);
+}
+
 // ─── Initialize ───
 document.addEventListener('DOMContentLoaded', () => {
   renderSkills();
   initReveal();
   initSkillBars();
-  initCounters();
-  initNavbar();
-  initBackToTop();
-  setFooterYear();
+  initSpotlight();
+  initTypedHeader();
+  
+  // Update Footer Year
+  const yearEl = document.getElementById('footerYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
