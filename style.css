@@ -251,6 +251,33 @@ input, textarea { font-family: inherit; }
 .info-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
 .info-card p { font-size: 0.82rem; color: var(--text-muted); }
 
+/* Personal Info Grid */
+.personal-info-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+}
+.personal-info-list {
+  list-style: none;
+  padding: 0;
+}
+.personal-info-list li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  display: flex;
+}
+.personal-info-list strong {
+  color: var(--text-primary);
+  min-width: 130px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .personal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ═══════════════ SKILLS ═══════════════ */
 .skills-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;
