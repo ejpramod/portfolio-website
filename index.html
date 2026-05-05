@@ -146,8 +146,8 @@
         </div>
       </div>
 
-      <div class="personal-info-grid reveal" style="margin-top: 3rem;">
-        <div class="personal-info-card glass-card" style="padding: 30px;">
+      <div class="personal-info-grid reveal" style="margin-top: 3rem; display: flex; justify-content: center;">
+        <div class="personal-info-card glass-card" style="padding: 30px; max-width: 600px; width: 100%;">
           <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--accent-light);">
             <i class="ph-fill ph-user-circle"></i> Personal Information
           </h3>
@@ -157,14 +157,6 @@
             <li><strong>Languages:</strong> English, Hindi, Marathi</li>
             <li><strong>Current Location:</strong> Pune, India</li>
           </ul>
-        </div>
-        <div class="personal-info-card glass-card" style="padding: 30px;">
-          <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--accent-light);">
-            <i class="ph-fill ph-map-pin"></i> Permanent Address
-          </h3>
-          <p style="color: var(--text-secondary); line-height: 1.6;">
-            Flat No. E-1006, E-wing GK Mirai phase 1 Punawale, near Zudio, Pune - 411033
-          </p>
         </div>
       </div>
     </div>
@@ -324,7 +316,7 @@
         <h2 class="section-title">Contact <span class="text-accent">Me</span></h2>
         <div class="section-line"></div>
       </div>
-      <div class="contact-grid">
+      <div class="contact-wrapper reveal" style="max-width: 800px; margin: 0 auto;">
         <div class="contact-info reveal">
           <p class="contact-intro">Have a project in mind or want to discuss integration solutions? Feel free to reach
             out. I'm always open to new opportunities and collaborations.</p>
@@ -361,35 +353,7 @@
             </a>
           </div>
         </div>
-        <form class="contact-form glass-card reveal" id="contactForm" onsubmit="handleFormSubmit(event)">
-          <div class="form-group">
-            <label for="formName">Full Name</label>
-            <input type="text" id="formName" name="name" placeholder="John Doe" required />
-            <span class="form-error" id="nameError"></span>
-          </div>
-          <div class="form-group">
-            <label for="formEmail">Email Address</label>
-            <input type="email" id="formEmail" name="email" placeholder="john@example.com" required />
-            <span class="form-error" id="emailError"></span>
-          </div>
-          <div class="form-group">
-            <label for="formSubject">Subject</label>
-            <input type="text" id="formSubject" name="subject" placeholder="Project Inquiry" required />
-            <span class="form-error" id="subjectError"></span>
-          </div>
-          <div class="form-group">
-            <label for="formMessage">Message</label>
-            <textarea id="formMessage" name="message" rows="5" placeholder="Tell me about your project..."
-              required></textarea>
-            <span class="form-error" id="messageError"></span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="formSubmit">
-            <i class="ph ph-paper-plane-tilt"></i> Send Message
-          </button>
-          <div class="form-success" id="formSuccess">
-            <i class="ph-fill ph-check-circle"></i> Message sent successfully! I'll get back to you soon.
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </section>
