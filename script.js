@@ -242,6 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSkills();
   initReveal();
   initSkillBars();
+  initCounters();
+  initNavbar();
+  initBackToTop();
   initSpotlight();
   initTypedHeader();
   
